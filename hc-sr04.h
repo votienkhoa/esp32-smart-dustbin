@@ -1,10 +1,10 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#define HAND_TRIG_PIN 5
-#define HAND_ECHO_PIN 18
-#define TRASH_TRIG_PIN 15
-#define TRASH_ECHO_PIN 4
+#define HAND_TRIG_PIN 4
+#define HAND_ECHO_PIN 15
+#define TRASH_TRIG_PIN 5
+#define TRASH_ECHO_PIN 18
 #define MAX_HEIGHT 20.0 
 #define FULL_THRESHOLD 80.0
 
@@ -12,7 +12,7 @@ float trashLevel = 0.0;
 
 void setupSensors() {
   pinMode(HAND_TRIG_PIN, OUTPUT);
-  pinMode(HAND_ECHO_PIN, INPUT);
+  pinMode(HAND_ECHO_PIN, INPUT); 
   pinMode(TRASH_TRIG_PIN, OUTPUT);
   pinMode(TRASH_ECHO_PIN, INPUT);
 }
