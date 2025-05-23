@@ -18,16 +18,20 @@ void setupServo() {
 }
 
 void openLid() {
-  servo1.write(90);
-  servo2.write(90);
+  servo1.write(180);
+  servo2.write(180);
   lidOpen = true;
 }
 
 void closeLid() {
-  servo1.write(0);
-  servo2.write(0);
+  Serial.println("Đóng nắp từ từ: Hai servo chạy");
+  for (int angle = 90; angle >= 0; angle -= 2) {
+    servo1.write(angle);
+    servo2.write(angle);
+    delay(50);
+  }
   lidOpen = false;
-  Serial.println("Đóng nắp: Hai servo chạy");
+  Serial.println("Đóng nắp hoàn tất");
 }
 
 bool isLidOpen() {

@@ -1,8 +1,8 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#define HAND_TRIG_PIN 4
-#define HAND_ECHO_PIN 15
+#define HAND_TRIG_PIN 26
+#define HAND_ECHO_PIN 25
 #define TRASH_TRIG_PIN 5
 #define TRASH_ECHO_PIN 18
 #define MAX_HEIGHT 20.0 

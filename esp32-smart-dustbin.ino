@@ -39,7 +39,6 @@ void loop() {
     delay(1000);
   }
 
-  // Cập nhật mức rác
   if (!isLidOpen()) {
     updateTrashLevel();
     Serial.print("Mức rác: ");
